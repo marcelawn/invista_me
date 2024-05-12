@@ -16,8 +16,7 @@ def novo_usuario(request):
             fomulario.save()
             # Informar
             usuario = fomulario.cleaned_data.get('username')
-            messages.success(request, f'O usuário {
-                             usuario} foi criado com sucesso!')
+            messages.success(request,f'O usuário {usuario} foi criado com sucesso!')
 
             return redirect('login')
     else:
